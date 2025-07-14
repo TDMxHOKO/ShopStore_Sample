@@ -1,0 +1,535 @@
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محصولات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/svg-with-js.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/v4-font-face.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/v4-shims.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/v5-font-face.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/brands.min.js">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/conflict-detection.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/fontawesome.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/regular.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/solid.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/v4-shims.min.js">
+    <link rel="stylesheet" href="../css/scrol.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="container">
+    <header class="container pt-3 fixed-top">
+        <div class="container">
+            <div class="row dis-f">
+                <div class="col-md-2">
+                    <div class="logo pt-3">
+                        <a class="h1 text-decoration-none" href="index.html">logo</a>
+                    </div>
+                </div>
+                <div class="col-md-2 pt-4">
+                    <div class="d-inline-flex border-dark">
+                        <div class="bg-f3f3f6 text-center border-radius-top-bot h-70">
+                            <div style="padding: 5px;"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px"
+                                        y="0px" width="40" height="40" viewBox="0 0 50 50"
+                                        class="bg-ec5e95 fill-white bac-danger-info">
+                                        <path
+                                            d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-80">
+                            <input placeholder="search..." class="h-30p border-radius-top-bot2 out-none w-100"
+                                type="search">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center">
+                    <ul class="d-inline-flex pt-3">
+                        <li class="list-unstyled p-3"><a class="text-decoration-none text-darr"
+                                href="index.html">خانه</a></li>
+                        <li class="list-unstyled p-3"><a class="text-decoration-none text-darr" href="#">درباره ما</a>
+                        </li>
+                        <li class="list-unstyled p-3"><a class="text-decoration-none text-darr" href="#">فروشگاه ▾</a>
+                            <ul style="border-radius: 5px;margin-top: 30px;" class="dropdown">
+                                <li class="d-flex justify-content-center"><a class="p20-25" href="products.html">محصولات
+
+                                    </a></li>
+                                <li class="d-flex justify-content-center"><a class="p20-25" href="#">موبایل</a></li>
+                                <li class="d-flex justify-content-center"><a class="p20-25" href="#">تبلت</a>
+                                </li>
+                                <li class="d-flex justify-content-center"><a class="p20-25" href="#">ساعت</a></li>
+                                <li class="d-flex justify-content-center"><a class="p20-25" href="#">لپتاپ</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="list-unstyled p-3"><a class="text-decoration-none text-darr" href="#">وبلاگ</a></li>
+                        <label class="ui-switch d-flex align-items-center">
+                            <input onclick="change()" type="checkbox">
+                            <div class="slider">
+                                <div class="circle"></div>
+                            </div>
+                        </label>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-3 pt-4 text-center justify-content-end">
+                    <a style="transition: 0.5s;" href="log in.html" type="button"
+                        class="btn btn-outline-danger btn-outline-danger-info">ورود</a>
+                    <a style="transition: 0.5s;" href="Registration.html" type="button"
+                        class="btn btn-outline-dark btn-dark-white">ثبت
+                        نام</a>
+
+                </div>
+            </div>
+            <div class="dis-flex">
+                <div class="logo w-50 pt-3">
+                    <a class="h1 text-decoration-none" href="#">logo</a>
+                </div>
+                <div class="pt-4 w-50 d-flex justify-content-end">
+                    <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu"
+                        class="btn btn-danger d-flex align-items-center gap-2 h-40 bac-danger-info">
+                        <img style="width: 20px;" src="../img/burger-menu-white-left.png">
+                        <span>منو</span>
+                    </button>
+                </div>
+                <div style="right: 0;" class="offcanvas offcanvas-start r-header" data-bs-scroll="true" tabindex="-1"
+                    id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                    <div class="d-inline-flex pt-4">
+                        <div style="padding-right: 13%;">
+                            <a class="h1 text-decoration-none" href="#">logo</a>
+                        </div>
+                        <div class="w-100">
+                            <button style="width: 180%;box-shadow: none;" type="button" class="btn-close pt-4"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="pt-4">
+                            <li class="py-4 text-end">
+                                <a href="#" class="text-decoration-none text-white-black"><span>
+                                        <span>
+                                            <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"
+                                                shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                                image-rendering="optimizeQuality" fill-rule="evenodd"
+                                                clip-rule="evenodd" viewBox="0 0 512 473.763">
+                                                <path fill-rule="nonzero"
+                                                    d="M9.005 183.371a12.09 12.09 0 012.537-2.598L248.016 2.406c4.177-3.127 10.077-3.288 14.458 0l115.875 87.017V70.365c-5.821-.01-10.537-4.731-10.537-10.552V34.589c0-5.827 4.725-10.551 10.552-10.551h83.575c5.827 0 10.552 4.724 10.552 10.551v25.224c0 5.824-4.719 10.545-10.54 10.552v81.843l36.413 27.344a12.04 12.04 0 012.185 1.85c30.558 32.907-5.7 80.853-42.52 71.541v207.555c0 7.325-5.94 13.265-13.265 13.265H64.878c-7.325 0-13.265-5.94-13.265-13.265V252.147c-36.464 7.471-67.578-36.805-42.608-68.776z" />
+                                                <path fill="#E2E9E3"
+                                                    d="M256.738 100.953l188.026 145.986v213.559h-53.971l.003-.158V314.242c0-5.554-4.368-10.057-9.755-10.057H280.904c-5.387 0-9.755 4.503-9.755 10.057V460.34l.003.158H64.878V247.094l191.86-146.141zM128.599 304.389H235.24c5.554 0 10.056 4.411 10.056 9.853v83.429c0 5.442-4.502 9.853-10.056 9.853H128.599c-5.554 0-10.057-4.411-10.057-9.853v-83.429c0-5.442 4.503-9.853 10.057-9.853z" />
+                                                <path fill="#CCD2CD"
+                                                    d="M256.738 100.953l14.222 11.056L90.132 255.99l-3.339 204.508H63.784l1.094-213.58z" />
+                                                <path fill="#E2534B" class="red-info-home"
+                                                    d="M451.399 70.365v73.919l-62.498-46.937V70.365z" />
+                                                <path class="red-info-home" fill="#E2E9E3"
+                                                    d="M378.364 34.589h83.575v25.225h-83.575z" />
+                                                <path class="red-info-home" fill="#E2534B"
+                                                    d="M18.794 190.38c-20.167 25.077 9.009 61.919 38.549 47.153l199.49-151.768 193.23 150.203c28.924 21.505 66.555-19.596 41.678-46.372L255.268 12.012 18.794 190.38z" />
+                                                <path class="red-info-home" fill="#CC4B44"
+                                                    d="M18.794 190.38c-15.914 23.528.939 31.801 30.48 17.035l206.711-155.24L278.79 29.68l-23.522-17.668L18.794 190.38z" />
+                                                <path class="red-info-home" fill="#E2534B"
+                                                    d="M280.904 314.242h100.137V460.34H280.904V314.242zm84.174 62.882l4.357 2.208a2.33 2.33 0 011.276 2.073l.006 16.078a2.333 2.333 0 01-1.899 2.29l-4.314 1.249a2.316 2.316 0 01-2.868-1.583l-.095-.644-.009-19.687a2.331 2.331 0 013.546-1.984z" />
+                                                <path fill="#CC4B44"
+                                                    d="M280.904 314.242h100.137v2.755c-118.269-.246-91.937 43.89-91.937 143.343h-8.2V314.242z" />
+                                                <path fill="#fff"
+                                                    d="M128.599 314.242H176.7v37.695h-47.861l-.24.009v-37.704zm56.14 0h50.501v37.853a4.022 4.022 0 00-1.121-.158h-49.38v-37.695zm50.501 45.576v37.853h-50.501v-37.695h49.38c.389 0 .766-.055 1.121-.158zm-58.54 37.853h-48.101v-37.704l.24.009H176.7v37.695z" />
+                                                <path class="red-info-home"
+                                                    d="M253.533 182.475c14.176 0 25.67 11.49 25.67 25.669 0 14.177-11.494 25.67-25.67 25.67-14.18 0-25.67-11.493-25.67-25.67 0-14.179 11.49-25.669 25.67-25.669z" />
+                                            </svg> </span>
+                                        <span>خانه</span>
+                                    </span></a>
+                            </li>
+                            <li class="py-4 text-end">
+                                <a href="#" class="text-decoration-none text-white-black"><span>
+                                        <span>
+                                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle class="red-info" cx="12" cy="12" r="12" fill="#E53935" />
+                                                <path class="sec-white" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12ZM12 14C8.68629 14 6 16.6863 6 20H18C18 16.6863 15.3137 14 12 14Z"
+                                                    fill="#5D4037" />
+                                            </svg>
+
+                                        </span>
+                                        <span>
+                                            درباره ما
+                                        </span>
+                                    </span></a>
+                            </li>
+                            <li class="py-4 text-end">
+                                <a class="text-decoration-none text-white-black"><span>
+                                        <span>
+                                            <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"
+                                                shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                                image-rendering="optimizeQuality" fill-rule="evenodd"
+                                                clip-rule="evenodd" viewBox="0 0 512 389.397">
+                                                <path class="red-info-home" fill="#C23F37"
+                                                    d="M465.57 182.896L449.973 379.5c-.422 5.403-4.483 9.897-9.903 9.897H71.927c-5.423 0-9.474-4.473-9.9-9.897L46.421 182.896H465.57z" />
+                                                <path class="store-header" fill="#333"
+                                                    d="M90.794 114.531L186.151 7.712c8.488-9.505 23.191-10.339 32.692-1.861v.01c9.515 8.481 10.339 23.2 1.858 32.702l-67.803 75.968H90.794zm270.03 0l-67.817-75.968c-8.487-9.502-7.653-24.221 1.851-32.702h.011c9.501-8.488 24.21-7.654 32.701 1.851l95.354 106.819h-62.1z" />
+                                                <path fill="white"
+                                                    d="M148.969 214.449h43.76v126.523l-43.76.003V214.449zm85.15 0h43.749v126.523l-43.749.003V214.449zm85.146 0h43.759v126.523l-43.759.003V214.449z" />
+                                                <path class="red-info-home" fill="#E15240"
+                                                    d="M13.725 114.349h484.55c7.55 0 13.725 6.178 13.725 13.725v41.183c0 7.547-6.178 13.726-13.725 13.726H13.725C6.178 182.983 0 176.808 0 169.257v-41.183c0-7.55 6.175-13.725 13.725-13.725z" />
+                                            </svg> <span>
+                                                فروشگاه ▾
+                                                <ul style="border-radius: 5px;margin-top: 30px;" class="dropdown w-50">
+                                                    <li class="d-flex justify-content-center"><a
+                                                            class="p20-25 text-white-black" href="#">موبایل</a></li>
+                                                    <li class="d-flex justify-content-center"><a
+                                                            class="p20-25 text-white-black" href="#">تبلت</a>
+                                                    </li>
+                                                    <li class="d-flex justify-content-center"><a
+                                                            class="p20-25 text-white-black" href="#">ساعت</a></li>
+                                                    <li class="d-flex justify-content-center"><a
+                                                            class="p20-25 text-white-black" href="#">لپتاپ</a></li>
+
+                                                </ul>
+                                            </span>
+                                        </span></a>
+                            </li>
+                            <li class="py-4 text-end">
+                                <a href="#" class="text-decoration-none text-white-black"><span>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                                image-rendering="optimizeQuality" fill-rule="evenodd"
+                                                clip-rule="evenodd" viewBox="0 0 640 640">
+                                                <path class="red-info-home"
+                                                    d="M598.661 239.979h-35.882c-21.97 0-41.245-18.603-42.757-40.004 0-114.167-92.044-200.01-207.003-200.01H208.124C93.237-.035.07 92.493-.012 206.649v226.774c0 114.167 93.25 206.613 208.136 206.613h224c114.957 0 207.887-92.446 207.887-206.613V286.94c0-22.808-18.401-46.938-41.374-46.938l.023-.024zm-398.674-79.997H320c21.992 0 40.004 18.012 40.004 40.004 0 21.993-18.012 40.005-40.004 40.005l-120.013-.012c-21.992 0-40.004-18.012-40.004-40.004 0-22.005 18.012-40.005 40.004-40.005v.012zm240.027 320H199.987c-21.992 0-40.004-18-40.004-40.004 0-21.993 18.012-40.005 40.004-40.005l240.027.024c21.992 0 40.004 18 40.004 40.004 0 21.993-18.012 40.005-40.004 40.005v-.024z" />
+                                            </svg> </span>
+                                        <span>
+                                            وبلاگ
+                                        </span>
+                                    </span></a>
+                            </li>
+                            <li class="py text-end">
+                                <a href="#" class="text-decoration-none" style="text-decoration-color: red;">
+                                    <span>
+                                        <span>
+                                            <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"
+                                                shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                                image-rendering="optimizeQuality" fill-rule="evenodd"
+                                                clip-rule="evenodd" viewBox="0 0 512 512">
+                                                <defs>
+                                                    <linearGradient id="prefix__a" gradientUnits="userSpaceOnUse"
+                                                        x1="256" y1="3.84" x2="256" y2="512">
+                                                        <stop offset="0" stop-color="#2AABEE" />
+                                                        <stop offset="1" stop-color="#229ED9" />
+                                                    </linearGradient>
+                                                </defs>
+                                                <circle class="red-info-home" fill="url(#prefix__a)" cx="256" cy="256"
+                                                    r="256" />
+                                                <path fill="#fff"
+                                                    d="M115.88 253.3c74.63-32.52 124.39-53.95 149.29-64.31 71.1-29.57 85.87-34.71 95.5-34.88 2.12-.03 6.85.49 9.92 2.98 2.59 2.1 3.3 4.94 3.64 6.93.34 2 .77 6.53.43 10.08-3.85 40.48-20.52 138.71-29 184.05-3.59 19.19-10.66 25.62-17.5 26.25-14.86 1.37-26.15-9.83-40.55-19.27-22.53-14.76-35.26-23.96-57.13-38.37-25.28-16.66-8.89-25.81 5.51-40.77 3.77-3.92 69.27-63.5 70.54-68.9.16-.68.31-3.2-1.19-4.53s-3.71-.87-5.3-.51c-2.26.51-38.25 24.3-107.98 71.37-10.22 7.02-19.48 10.43-27.77 10.26-9.14-.2-26.72-5.17-39.79-9.42-16.03-5.21-28.77-7.97-27.66-16.82.57-4.61 6.92-9.32 19.04-14.14z" />
+                                            </svg> </span>
+                                        <span class="text-white-black">
+                                            TELEGRAM
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="py text-end pt-2 mt-2">
+                                <a href="#" class="text-decoration-none" style="text-decoration-color: red;">
+                                    <span>
+                                        <span>
+                                            <svg width="30" height="30" id="Layer_1" data-name="Layer 1"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 241.19">
+                                                <defs></defs>
+                                                <title>whatsapp-color</title>
+                                                <path class="cls-1 red-info-home"
+                                                    d="M205,35.05A118.61,118.61,0,0,0,120.46,0C54.6,0,1,53.61,1,119.51a119.5,119.5,0,0,0,16,59.74L0,241.19l63.36-16.63a119.43,119.43,0,0,0,57.08,14.57h0A119.54,119.54,0,0,0,205,35.07v0ZM120.5,219A99.18,99.18,0,0,1,69.91,205.1l-3.64-2.17-37.6,9.85,10-36.65-2.35-3.76A99.37,99.37,0,0,1,190.79,49.27,99.43,99.43,0,0,1,120.49,219ZM175,144.54c-3-1.51-17.67-8.71-20.39-9.71s-4.72-1.51-6.75,1.51-7.72,9.71-9.46,11.72-3.49,2.27-6.45.76-12.63-4.66-24-14.84A91.1,91.1,0,0,1,91.25,113.3c-1.75-3-.19-4.61,1.33-6.07s3-3.48,4.47-5.23a19.65,19.65,0,0,0,3-5,5.51,5.51,0,0,0-.24-5.23C99,90.27,93,75.57,90.6,69.58s-4.89-5-6.73-5.14-3.73-.09-5.7-.09a11,11,0,0,0-8,3.73C67.48,71.05,59.75,78.3,59.75,93s10.69,28.88,12.19,30.9S93,156.07,123,169c7.12,3.06,12.68,4.9,17,6.32a41.18,41.18,0,0,0,18.8,1.17c5.74-.84,17.66-7.21,20.17-14.18s2.5-13,1.75-14.19-2.69-2.06-5.7-3.59l0,0Z" />
+                                            </svg> </span>
+                                        <span class="text-white-black">
+                                            WHATSAPP
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <label class="ui-switch d-flex align-items-center mt-5">
+                                <input onclick="change()" type="checkbox">
+                                <div class="slider">
+                                    <div class="circle"></div>
+                                </div>
+                            </label>
+                            <li class="py-4 text-end" style="margin-top: 100%;">
+                                <div>
+                                    <a href="log in.html" type="button"
+                                        class="btn btn-outline-danger w-100 btn-outline-danger-info">ورود</a>
+                                    <a href="Registration.html" type="button"
+                                        class="btn btn-outline-dark w-100 mt-3 btn-dark-white">ثبت نام</a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hide w-100 mt-2 border-res-header">
+            <div class="w-15 bg-f3f3f6 text-center border-radius-top-bot">
+                <div style="padding: 5px;"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="40" height="40" viewBox="0 0 50 50" class="bg-ec5e95 fill-white">
+                            <path
+                                d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="w-100">
+                <input placeholder="search..." class="h-30p border-radius-top-bot2 out-none w-100" type="search">
+            </div>
+        </div>
+        <hr class="hr">
+    </header>
+    <!-- ///// -->
+    <div class="container mt-5">
+        <div style="margin-top: 10rem;" class="row">
+            <div class="col-md-3">
+                <ul style="gap: 15px;" class="nav nav-pills flex-column">
+                    <li class="nav-item"><a class="text-decoration-none text-danger" href="category.html">دسته بندی</a>
+                    </li>
+
+                    <li class="nav-item"><a class="text-decoration-none text-danger" href="#">وبلاگ</a></li>
+                    <li class="nav-item"><a class="text-decoration-none text-danger" href="user.html">کاربران</a></li>
+                    <li class="nav-item"><a class="text-decoration-none text-danger" href="portfolio.html">نمونه کارها
+                        </a></li>
+                    <li class="nav-item"><a class="text-decoration-none text-danger" href="changepassword.html">تغییر
+                            رمز عبور</a></li>
+                    <li class="nav-item"><a class="nav-link text-panel active bg-danger-info text-decoration-none"
+                            href="product.html">محصولات</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <h3 class="text-center pt-5">محصولات</h3>
+                <hr>
+                <div class="row d-flex justify-content-center pt-5">
+                    <div class="row">
+                        <div class="mr-5 col-md-12 d-flex justify-content-end">
+                            <div class="mr-5 col-md-12 d-flex justify-content-end">
+                                <div>
+                                    <a class="btn btn-outline-danger" href="#">
+                                        اضافه کردن وبلاگ جدید
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="container pt-5">
+                        <div class="col-md-12">
+                            <table class="table table-striped table-class hidden-sm hidden-xs" id="table-id">
+                                <tr>
+                                    <th>شناسه</th>
+                                    <th style="width: 60%;">عنوان</th>
+                                    <th>قیمت</th>
+
+                                    <th>عملیات</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>هندزفری بلوتوث</td>
+                                    <th>10000</th>
+                                    <td>
+                                        <a href="#" class="btn btn-danger-info text-white">ویرایش</a>
+                                        <a href="#" class="btn btn-danger-info text-white">آپلود عکس</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>موبایل</td>
+                                    <th>90000</th>
+                                    <td>
+                                        <a href="#" class="btn btn-danger-info text-white">ویرایش</a>
+                                        <a href="#" class="btn btn-danger-info text-white">آپلود عکس</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>ساعت هوشمند</td>
+                                    <th>80000</th>
+                                    <td>
+                                        <a href="#" class="btn btn-danger-info text-white">ویرایش</a>
+                                        <a href="#" class="btn btn-danger-info text-white">آپلود عکس</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>شارژر و کابل</td>
+                                    <th>70000</th>
+                                    <td>
+                                        <a href="#" class="btn btn-danger-info text-white">ویرایش</a>
+                                        <a href="#" class="btn btn-danger-info text-white">آپلود عکس</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>قاب و گلس</td>
+                                    <th>60000</th>
+                                    <td>
+                                        <a href="#" class="btn btn-danger-info text-white">ویرایش</a>
+                                        <a href="#" class="btn btn-danger-info text-white">آپلود عکس</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>پاور بانک</td>
+                                    <th>50000</th>
+                                    <td>
+                                        <a href="#" class="btn btn-danger-info text-white">ویرایش</a>
+                                        <a href="#" class="btn btn-danger-info text-white">آپلود عکس</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>اسپیکر</td>
+                                    <th>12000</th>
+                                    <td>
+                                        <a href="#" class="btn btn-danger-info text-white">ویرایش</a>
+                                        <a href="#" class="btn btn-danger-info text-white">آپلود عکس</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-footer">
+        <div class="position-relative div-1-footer w-100">
+            <div class="position-absolute div-2-footer">
+                <img class="w-100 footer-img" src="../img/footer-image1.png">
+                <img class="w-100 footer-img2" src="../img/footer-image2.png">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 div-6-footer">
+                    <h4>
+                        درباره ما
+                    </h4>
+                    <p class="pt-5" style="font-size: 16px;">
+                        <span>
+                            <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از طراحان گرافیک است. چاپگرها و</span>
+                            <span>متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای </span>
+                            <span>متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در
+                                شصت و سه درصد گذشته، حال و</span>
+                            <span> آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+                                افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص </span>
+                            <span>طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+                                صورت می توان امید داشت که تمام و</span>
+                            <span>دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                                وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و </span>
+                            <span>جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+                                قرار گیرد.</span>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-md-2 div-2-footer-res">
+                    <h4>
+                        دسته بندی
+                    </h4>
+                    <ul class="pt-1">
+                        <li class="pt-3"><a class="text-decoration-none text-white2" href="#">موبایل</a></li>
+                        <li class="pt-3"><a class="text-decoration-none text-white2" href="#">لپ
+                                تاپ</a></li>
+                        <li class="pt-3"><a class="text-decoration-none text-white2" href="#">هندزفری بلوتوث</a></li>
+                        <li class="pt-3"><a class="text-decoration-none text-white2" href="#">ساعت هوشمند</a></li>
+                        <li class="pt-3"><a class="text-decoration-none text-white2" href="#">پاوربانک</a></li>
+                        <li class="pt-3"><a class="text-decoration-none text-white2" href="#">اسپیکر</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 div-2-footer-res">
+                    <h4>
+
+                        دسترسی سریع
+                    </h4>
+                    <ul class="pt-1">
+                        <li class="pt-3"><a class="text-decoration-none text-white2" href="log in.html">ورود</a></li>
+                        <li class="pt-3"><a class="text-decoration-none text-white2" href="Registration.html">ثبت
+                                نام</a></li>
+                        <li class="pt-3"><a class="text-decoration-none text-white2" href="#">قوانین سایت</a></li>
+                        <li class="pt-3"><a class="text-decoration-none text-white2" href="#">سوالات متداول</a></li>
+                        <li class="pt-3"><a class="text-decoration-none text-white2" href="#">درباره ما</a></li>
+                        <li class="pt-3"><a class="text-decoration-none text-white2" href="contactus.html">تماس با
+                                ما</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 div-2-footer-res">
+                    <h4>ارسال پیام</h3>
+                        <input placeholder="your massage" class="input-footer w-100 mt-10" type="email">
+                        <a href="#" class="btn btn-primary2 d-flex justify-content-center mt-2">ارسال</a>
+                        <hr>
+                        <p>مارا دنبال کنید</p>
+                        <div class="d-flex ">
+
+                            <div class="w-33 pad-10p">
+                                <div class="text-center div-insta-footer">
+                                    <a href="#" class="text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white"
+                                            class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-33 pad-10p">
+                                <div class="text-center div-tel-footer">
+                                    <a href="#" class="text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                                            fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-33 pad-10p">
+                                <div class="text-center div-what-footer">
+                                    <a href="#" class="text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white"
+                                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                            <path
+                                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="end-footer">
+        <span>
+            <span>تمامی حقوق متعلق به</span>
+            <span><a class="text-white2" href="#">سایت</a></span>
+            <span>است</span>
+        </span>
+    </div>
+    <script src="../js/scrol.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/js.js"></script>
+</body>
+
+</html>
